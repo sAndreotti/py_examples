@@ -5,11 +5,11 @@ def guess(x):
     random_number = ran.randint(1, x)
     guess=0
     while guess!=random_number:
-        guess = int(input(f"Guess a number between 1 and {x}: "))
-        if guess < random_number: print("Guess again, too low")
-        if guess > random_number: print("Too high")
+        guess = int(input(f"Indovina un numero tra 1 e {x}: "))
+        if guess < random_number: print("Riprova, troppo basso")
+        if guess > random_number: print("Troppo alto")
 
-    print(f"Guess! {guess} is the number")
+    print(f"Indovinato! {guess} era il numero")
 
 def computer_guess(x):
     low = 1
@@ -21,12 +21,12 @@ def computer_guess(x):
         else:
             guess = low
             
-        feedback = input(f'Is {guess} too high (H), too low (L), or correct (C)? ').upper()
+        feedback = input(f'Is {guess} Troppo alto (H), troppo basso (L), o corretto (C)? ').upper()
 
         if feedback == 'H': high = guess-1
         if feedback == 'L': low = guess+1
 
-    print(f"Yeeee, found {guess} as your number")
+    print(f"Yeeee, trovato, {guess} era il tuo numero")
 
 
 computer_guess(10)

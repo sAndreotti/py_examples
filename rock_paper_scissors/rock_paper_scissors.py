@@ -2,18 +2,18 @@
 import random as ran
 
 def play():
-    user = input("Chose 'R' rock, 'P' paper, 'S' scissors: ").upper()
+    user = input("Scegli 'R' Sasso, 'P' Carta, 'S' Forbici: ").upper()
     computer = ran.choice(['R', 'P', 'S'])
 
     if user == computer:
         return 'It\'s a tie'
     
     # R > S, S > P, P > R
-    print(f"User chose: {user}, Computer chose: {computer}")
+    print(f"Hai schelto: {user}, Computer: {computer}")
     if is_win(user, computer):
-        return 'User Wins!'
+        return 'Hai Vinto!'
     
-    return 'Computer Wins!'
+    return 'Il Computer ha Vinto!'
 
 def is_win(player, opponent):
     #return true if player win

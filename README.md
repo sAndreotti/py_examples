@@ -13,3 +13,6 @@ La cartella ospita il file con il programma per giocare a carta, forbice e sasso
 Il gioco dell'impiccato è costituito da 2 file: uno con la lista delle parole e un secondo con la logica del gioco. Nella cartella è presente anche un file contenente 1000 parole 
 circa dalle quali sono state estratte quelle di lunghezza compresa tra 4 e 10 caratteri. Il gioco si sarebbe potuto sviluppare in un solo file ma così facendo ci si esercita con
 le dipendenze dei file
+
+## Tic Tac Toe
+Classico gioco di tris, come avversario il computer che sceglie le mosse randomicamente
